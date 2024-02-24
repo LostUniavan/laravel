@@ -6,8 +6,8 @@
 </head>
 <body>
    <form action="" method="get">
-      Primeiro Número: <input name="num1" type="text"><br>
-      Segundo Número: <input name="num2" type="text"><br>
+      Primeiro Número: <input name="num1" type="number"><br>
+      Segundo Número: <input name="num2" type="number"><br>
       <input type="submit" name="operacao" value="+">     
       <input type="submit" name="operacao" value="-">     
       <input type="submit" name="operacao" value="*">     
@@ -32,8 +32,8 @@ try {
        echo "O resultado da operação é: $c";
     }
 }
-catch (Exception $e) {
-    echo "Erro: " . $e->getMessage();
+catch (\Throwable $e) {
+    echo "\n" . "Erro: " . $e->getMessage();
 }
 ?>       
 </body>
